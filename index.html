@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shweta &amp; Saurabh's Wedding</title>
+<meta name="description" content="You are cordially invited to celebrate the wedding of Shweta and Saurabh.">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ee;--card:#fffdf8;--ink:#3b2a24;--muted:#7a655b;--gold:#b08a4a;--maroon:#7a1f2b;--line:#e6d9c3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1e1614;--card:#2a1f1c;--ink:#f3e8d8;--muted:#c2ab98;--gold:#d4aa63;--maroon:#e08a95;--line:#4a3a34}}
+:root[data-theme="dark"]{--bg:#1e1614;--card:#2a1f1c;--ink:#f3e8d8;--muted:#c2ab98;--gold:#d4aa63;--maroon:#e08a95;--line:#4a3a34}
+*{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond','Noto Serif Devanagari',Georgia,serif;font-size:19px;line-height:1.55;text-align:center}
+.script{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
+html[lang=hi] .script{font-family:'Noto Serif Devanagari',serif;font-weight:600}
+#lang{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;z-index:30;background:var(--card);color:var(--maroon);border:1px solid var(--gold);border-radius:999px;padding:6px 14px;font:inherit;font-size:15px;cursor:pointer}
+#seal{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:opacity .8s,visibility .8s}
+#seal.gone{opacity:0;visibility:hidden}
+.wax{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b03040,#7a1f2b 60%,#55121c);box-shadow:0 6px 18px rgba(0,0,0,.35),inset 0 0 0 8px rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#f3d9a4;font-size:46px;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+#seal p{margin:22px 0 4px;letter-spacing:.2em;text-transform:uppercase;font-size:16px;color:var(--gold)}
+#seal small{color:var(--muted);font-style:italic}
+main{max-width:640px;margin:0 auto;padding:0 20px 60px}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px 0}
+.om{font-size:28px;color:var(--gold)}
+.lbl{letter-spacing:.25em;text-transform:uppercase;font-size:15px;color:var(--muted);margin:14px 0 0}
+.hero h1{margin:10px 0;font-size:clamp(50px,14vw,90px);line-height:1.1;color:var(--maroon)}
+.hero h1 span{display:block;font-size:.45em;color:var(--gold)}
+.date{font-size:24px;font-style:italic}
+.orn{color:var(--gold);letter-spacing:.5em;margin:16px 0}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{margin:0 0 10px;font-size:44px;color:var(--maroon);font-weight:400}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0 0}
+.cd div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 4px}
+.cd b{display:block;font-size:34px;color:var(--maroon);font-weight:600;line-height:1.1}
+.cd small{color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 20px;margin:18px 0;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card h3{margin:0;font-size:28px;color:var(--maroon);font-weight:600}
+.when{color:var(--gold);letter-spacing:.1em;text-transform:uppercase;font-size:15px;margin:2px 0 10px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dotted var(--line);text-align:left}
+.row b{font-weight:600;text-align:right}
+.venue{margin-top:12px;font-weight:600}
+.addr{color:var(--muted);font-size:17px}
+.btn{display:inline-block;margin-top:14px;padding:10px 22px;border:1px solid var(--gold);border-radius:999px;color:var(--maroon);text-decoration:none;letter-spacing:.06em;font:inherit;font-size:16px;background:transparent;cursor:pointer}
+.btn:hover{background:var(--gold);color:#fff}
+.names{font-size:36px;color:var(--maroon);margin:6px 0}
+.muted{color:var(--muted);font-style:italic}
+.tel a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gal figure{margin:0;aspect-ratio:1;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:28px}
+.gal img{width:100%;height:100%;object-fit:cover}
+form{display:grid;gap:12px;text-align:left}
+label{font-size:16px;color:var(--muted)}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;font-size:18px}
+footer{padding-top:30px;color:var(--muted);font-size:16px}
+</style>
+</head>
+<body>
+<button id="lang" type="button" onclick="toggleLang()">हिन्दी</button>
+<div id="seal" onclick="openInv()" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openInv()">
+  <div class="wax script">S&amp;S</div>
+  <p data-hi="✦ निमंत्रण खोलें ✦">✦ Open the Invitation ✦</p>
+  <small data-hi="खोलने के लिए छुएँ">tap to open</small>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="om">॥ श्री गणेशाय नमः ॥</div>
+    <div class="lbl" data-hi="शुभ विवाह निमंत्रण">Wedding Invitation</div>
+    <h1 class="script"><b data-hi="श्वेता" style="font-weight:inherit">Shweta</b><span data-hi="संग">weds</span><b data-hi="सौरभ" style="font-weight:inherit">Saurabh</b></h1>
+    <div class="date" data-hi="शनिवार, 21 नवम्बर 2026">Saturday, 21st November 2026</div>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="muted" data-hi="कोटद्वार, उत्तराखण्ड">Kotdwar, Uttarakhand</div>
+    <div class="cd" id="cd" aria-live="off">
+      <div><b id="d">0</b><small data-hi="दिन">Days</small></div>
+      <div><b id="h">0</b><small data-hi="घंटे">Hours</small></div>
+      <div><b id="m">0</b><small data-hi="मिनट">Mins</small></div>
+      <div><b id="s">0</b><small data-hi="सेकंड">Secs</small></div>
+    </div>
+  </div>
+
+  <section>
+    <p class="muted" data-hi="श्रीमती सुशीला गुसाईं, धर्मपत्नी स्व. श्री आर.एस. गुसाईं, अपनी प्रिय पौत्री के शुभ अवसर पर आपकी स्नेहपूर्ण उपस्थिति एवं आशीर्वाद की कामना करती हैं।">Smt Sushila Gusain, W/o Late Shri R.S. Gusain, desire the sweet fragrance of your loving presence to shower your blessings on the auspicious occasion of the celebrations of her beloved granddaughter</p>
+    <div class="names script" data-hi="श्वेता">Shweta</div>
+    <div class="muted" data-hi="पुत्री श्रीमती अंजलि गुसाईं एवं श्री सुजीत सिंह गुसाईं">D/o Smt. Anjali Gusain &amp; Sh. Sujeet Singh Gusain</div>
+    <div class="orn">❦</div>
+    <div class="names script" data-hi="सौरभ">Saurabh</div>
+    <div class="muted" data-hi="पुत्र श्रीमती शोभा सिंह एवं श्री जे. सिंह">S/o Smt. Shobha Singh &amp; Sh. J. Singh</div>
+  </section>
+
+  <section>
+    <h2 class="script" data-hi="उत्सव">Celebrations</h2>
+    <div class="card">
+      <h3 data-hi="अतिथि सत्कार एवं संगीत">Atithi Satkar &amp; Sangeet</h3>
+      <div class="when" data-hi="शुक्रवार, 20 नवम्बर 2026">Friday, 20th November 2026</div>
+      <div class="row"><span data-hi="संगीत">Sangeet</span><b data-hi="सायं 7:00 बजे">7:00 PM</b></div>
+      <div class="row"><span data-hi="तत्पश्चात">Followed by</span><b data-hi="भोजन">Dinner</b></div>
+      <div class="venue" data-hi="विजय गार्डन">Vijay Garden</div>
+      <div class="addr" data-hi="सीताबपुर सर्कस ग्राउंड, देवी मंदिर के पास,<br>देवी रोड, कोटद्वार, उत्तराखण्ड">Sitabpur Circus Ground, Near Devi Mandir,<br>Devi Road, Kotdwar, Uttarakhand</div>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Vijay+Garden+Sitabpur+Circus+Ground+Devi+Road+Kotdwar+Uttarakhand" data-hi="स्थान देखें">View Location</a>
+    </div>
+    <div class="card">
+      <h3 data-hi="शुभ विवाह">Marriage</h3>
+      <div class="when" data-hi="शनिवार, 21 नवम्बर 2026">Saturday, 21st November 2026</div>
+      <div class="row"><span data-hi="बारात का स्वागत">Reception of Barat</span><b data-hi="सायं 7:00 बजे">7:00 PM</b></div>
+      <div class="row"><span data-hi="भोजन">Dinner</span><b data-hi="रात्रि 8:00 बजे">8:00 PM</b></div>
+      <div class="row"><span data-hi="डोली">Doli</span><b data-hi="तारों की छाँव में">Taaron Ki Chhaon Mein</b></div>
+      <div class="venue" data-hi="आर्यन मैरिज गार्डन">Aryan Marriage Garden</div>
+      <div class="addr" data-hi="बी.ई.एल. रोड, खुनीबड़ा,<br>कोटद्वार, उत्तराखण्ड">B.E.L. Road, Khunibarh,<br>Kotdwar, Uttarakhand</div>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Aryan+Marriage+Garden+BEL+Road+Khunibarh+Kotdwar+Uttarakhand" data-hi="स्थान देखें">View Location</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="script" data-hi="झलकियाँ">Gallery</h2>
+    <div class="gal" id="gal"></div>
+  </section>
+
+  <section>
+    <h2 class="script">R.S.V.P.</h2>
+    <p class="muted" data-hi="इस उत्सव में सम्मिलित होकर नवदम्पति को आशीर्वाद दें।">Join us in this celebration and bless the newlyweds as they begin their beautiful journey of togetherness.</p>
+    <form onsubmit="return false" oninput="rsvp()" onchange="rsvp()">
+      <div><label for="n" data-hi="आपका नाम">Your name</label><input id="n" autocomplete="name"></div>
+      <div><label for="g" data-hi="कुल अतिथि">Number of guests</label><input id="g" type="number" min="1" max="20" value="1"></div>
+      <div><label for="a" data-hi="उपस्थिति">Attending</label>
+        <select id="a">
+          <option value="Both events" data-hi="दोनों कार्यक्रम">Both events</option>
+          <option value="Sangeet only (20 Nov)" data-hi="केवल संगीत (20 नव.)">Sangeet only (20 Nov)</option>
+          <option value="Wedding only (21 Nov)" data-hi="केवल विवाह (21 नव.)">Wedding only (21 Nov)</option>
+          <option value="Sorry, unable to attend" data-hi="क्षमा करें, उपस्थित न हो सकेंगे">Sorry, unable to attend</option>
+        </select></div>
+      <div><label for="t" data-hi="शुभकामना संदेश">Message for the couple</label><textarea id="t" rows="2"></textarea></div>
+      <a class="btn" id="wa" target="_blank" rel="noopener" href="#" style="text-align:center" data-hi="WhatsApp पर भेजें">Send RSVP on WhatsApp</a>
+    </form>
+    <p>Shailesh Gusain, Rajiv Gusain<br><span data-hi="अक्षत, कार्तिकेय, संदेश,<br>उद्देश, विशेष, आदित्य">Akshat, Kartikey, Sandesh,<br>Uddesh, Vishesh, Aditya</span></p>
+  </section>
+
+  <section>
+    <div class="lbl" data-hi="सादर निमंत्रण">A Cordial Invitation From</div>
+    <p><b data-hi="श्रीमती अंजलि गुसाईं एवं श्री सुजीत सिंह गुसाईं">Mrs. Anjali Gusain &amp; Mr. Sujeet Singh Gusain</b><br><span data-hi="दबराल कॉलोनी, सीताबपुर देवी रोड,<br>कोटद्वार, उत्तराखण्ड">Dabral Colony, Sitabpur Devi Road,<br>Kotdwar, Uttarakhand</span></p>
+    <p class="tel"><a href="tel:+918826661515">8826661515</a> &nbsp;·&nbsp; <a href="tel:+919971962474">9971962474</a></p>
+  </section>
+
+  <footer>
+    <div class="script" style="font-size:30px;color:var(--maroon)" data-hi="सप्रेम सधन्यवाद">With best compliments from</div>
+    <p data-hi="समस्त परिजन एवं मित्रगण">All Relatives &amp; Friends</p>
+    <div class="orn">✦</div>
+  </footer>
+</main>
+
+<script>
+// GALLERY: add photo file names (e.g. "photos/1.jpg") or data: URIs here. Empty = placeholders.
+var PHOTOS=[];
+var RSVP_NUMBER="918826661515";
+var EVENT=new Date("2026-11-21T19:00:00+05:30");
+var lang="en";
+function openInv(){document.getElementById("seal").classList.add("gone");window.scrollTo(0,0)}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;
+  document.querySelectorAll("[data-hi]").forEach(function(e){
+    if(!e.hasAttribute("data-en"))e.setAttribute("data-en",e.innerHTML);
+    e.innerHTML=l==="hi"?e.getAttribute("data-hi"):e.getAttribute("data-en");
+  });
+  document.getElementById("lang").textContent=l==="hi"?"English":"हिन्दी";
+  try{localStorage.setItem("lang",l)}catch(x){}
+  rsvp();
+}
+function toggleLang(){setLang(lang==="en"?"hi":"en")}
+function tick(){
+  var t=Math.max(0,EVENT-new Date()),p=function(n){return String(n)};
+  document.getElementById("d").textContent=p(Math.floor(t/864e5));
+  document.getElementById("h").textContent=p(Math.floor(t/36e5)%24);
+  document.getElementById("m").textContent=p(Math.floor(t/6e4)%60);
+  document.getElementById("s").textContent=p(Math.floor(t/1e3)%60);
+}
+function gallery(){
+  var g=document.getElementById("gal"),h="";
+  for(var i=0;i<6;i++)h+="<figure>"+(PHOTOS[i]?'<img loading="lazy" alt="Shweta and Saurabh" src="'+PHOTOS[i]+'">':"♡")+"</figure>";
+  g.innerHTML=h;
+}
+function rsvp(){
+  var v=function(i){return document.getElementById(i).value},
+  sel=document.getElementById("a"),
+  msg="Namaste! RSVP for Shweta & Saurabh's wedding.\nName: "+v("n")+"\nGuests: "+v("g")+"\nAttending: "+sel.value+(v("t")?"\nMessage: "+v("t"):"");
+  document.getElementById("wa").href="https://wa.me/"+RSVP_NUMBER+"?text="+encodeURIComponent(msg);
+}
+gallery();tick();setInterval(tick,1000);rsvp();
+try{if(localStorage.getItem("lang")==="hi")setLang("hi")}catch(x){}
+</script>
+</body>
+</html>
